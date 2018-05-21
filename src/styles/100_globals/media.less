@@ -1,0 +1,16 @@
+@mq-desktop-big: ~"screen and (min-width: @{screen-width-big})"; // 1200+ if you need
+
+@smaller-than-screen-width-big: (@screen-width-big - 1);
+@mq-desktop-small: ~"screen and (max-width: @{smaller-than-screen-width-big})"; //1040-1199px
+
+@smaller-than-screen-width-medium: (@screen-width-medium - 1);
+@mq-desktop-medium: ~"screen and (max-width: @{smaller-than-screen-width-medium})"; // 800-1039px
+
+@smaller-than-screen-width-small: (@screen-width-small - 1);
+@mq-mobile-mode: ~"screen and (max-width: @{smaller-than-screen-width-small})"; //640-799px
+
+@smaller-than-screen-width-mobile: (@screen-width-mobile - 1);
+@mq-mobile-big: ~"screen and (max-width: @{smaller-than-screen-width-mobile})"; // 480-639
+
+@smaller-than-screen-width-mobile-big: (@screen-width-mobile-big - 1);
+@mq-mobile-small: ~"screen and (max-width: @{smaller-than-screen-width-mobile-big})"; // 320-479

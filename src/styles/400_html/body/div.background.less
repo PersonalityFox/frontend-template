@@ -1,0 +1,33 @@
+div.background
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 3;
+
+	display: block;
+	visibility: hidden;
+
+	box-sizing: content-box;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	padding: 0;
+
+	cursor: pointer;
+	pointer-events: none;
+
+	opacity: 0;
+	background-color: fade(@clr-fg,50%);
+
+	transition: all .3s ease;
+
+	&.show
+	{
+		visibility: visible;
+
+		pointer-events: all;
+
+		opacity: 1;
+	}
+}

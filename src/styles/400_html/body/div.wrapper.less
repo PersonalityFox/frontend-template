@@ -1,0 +1,23 @@
+div.wrapper
+{
+	position: relative;
+	z-index: 1;
+
+	display: block;
+
+	box-sizing: border-box;
+	width: @screen-width-medium;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 20px;
+
+	@media @mq-mobile-big
+	{
+		width: 100vw;
+		padding: 0 15px;
+	}
+	@media @mq-mobile-small
+	{
+		min-width: 320px;
+	}
+}

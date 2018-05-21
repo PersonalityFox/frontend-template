@@ -1,2 +1,3 @@
 # frontend-template
-For fast start frontend dev
+
+Template for frontend dev with Less + TypeScript on Gulp
